@@ -1,18 +1,27 @@
 name: jupyter-version
 channels:
-  -  defaults
-  -  anaconda
+  - anaconda
+  - defaults
 dependencies:
-  - python==3.6
-  - numpy
-  - notebook
-  - pandas 
-  - scikit-learn
-  - seaborn
-  - matplotlib
   - ipywidgets
+  - matplotlib
+  - notebook
+  - numpy
+  - pandas=0.25
+  - python=3.7
+  - seaborn
+  - scikit-learn
   - pip
   - pip:
-     - jupyterlab
-     - mlflow
+      - coverage
+      - dynaconf
+      - fbprophet
+      - jupyterlab
+      - loguru
+      - mlflow==1.8.0
+      - plotly==4.12.0
+
+
+
+
 
